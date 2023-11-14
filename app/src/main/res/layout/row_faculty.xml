@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="facultyRowModel" type="com.ajarajeswarirsapplication.app.modules.faculty.data.model.FacultyRowModel"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackrectanglethirty"
+        android:layout_height="wrap_content" android:layout_width="match_parent">
+        <FrameLayout android:id="@+id/frameStacknoofdepartmen"
+            android:layout_gravity="top|start"
+            android:layout_height="@dimen/_35pxv"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:layout_marginEnd="@dimen/_10pxh" android:layout_width="@dimen/_189pxh">
+            <TextView android:ellipsize="end"
+                android:gravity="top|start"
+                android:id="@+id/txtNoofDepartmen"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{facultyRowModel.txtNoofDepartmen}"
+                style="@style/txtKanitmedium23" tools:text="@string/msg_no_of_departmen"/>
+            <FrameLayout android:id="@+id/frameStacknoofdepartmenOne"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_35pxv" android:layout_width="@dimen/_189pxh">
+                <TextView android:ellipsize="end"
+                    android:gravity="top|start"
+                    android:id="@+id/txtNoofDepartmenOne"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{facultyRowModel.txtNoofDepartmenOne}"
+                    style="@style/txtKanitmedium23" tools:text="@string/msg_no_of_departmen"/>
+                <FrameLayout
+                    android:id="@+id/frameStacknoofdepartmenTwo"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_35pxv" android:layout_width="@dimen/_189pxh">
+                    <TextView android:ellipsize="end"
+                        android:gravity="top|start"
+                        android:id="@+id/txtNoofDepartmenTwo"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{facultyRowModel.txtNoofDepartmenTwo}"
+                        style="@style/txtKanitmedium23" tools:text="@string/msg_no_of_departmen"/>
+                    <TextView android:ellipsize="end"
+                        android:gravity="top|start"
+                        android:id="@+id/txtNoofDepartmenThree"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{facultyRowModel.txtNoofDepartmenThree}"
+                        style="@style/txtKanitmedium23" tools:text="@string/msg_no_of_departmen"/>
+                </FrameLayout>
+            </FrameLayout>
+        </FrameLayout>
+        <View
+            android:background="@drawable/rectangle_bg_bluegray_100_radius_15"
+            android:id="@+id/viewRectangleThirty"
+            android:layout_gravity="bottom|center"
+            android:layout_height="@dimen/_47pxv"
+            android:layout_marginStart="@dimen/_1pxh"
+            android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_296pxh"/>
+    </FrameLayout>
+</layout>

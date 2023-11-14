@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="finalPageVM" type="com.ajarajeswarirsapplication.app.modules.finalpage.data.viewmodel.FinalPageVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackfinalOutput"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_26pxh"
+        android:layout_marginTop="@dimen/_35pxv"
+        android:layout_width="match_parent" style="@style/groupStyleindigo_A200">
+        <LinearLayout android:id="@+id/linearColumnfinalOutput"
+            android:layout_gravity="start"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStyleindigo_A200">
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnFinalOutput"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_39pxh"
+                android:layout_marginStart="@dimen/_39pxh"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_6pxv"
+                android:paddingEnd="@dimen/_26pxh"
+                android:paddingStart="@dimen/_21pxh"
+                android:paddingTop="@dimen/_6pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_final_output"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded_1" tools:text="@string/lbl_final_output"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:gravity="start"
+                android:id="@+id/recyclerFinalPage"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_64pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                itemSpace="@{@dimen/_21pxh}" tools:itemCount="10" tools:listitem="@layout/row_final_page"/>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="studentVM" type="com.ajarajeswarirsapplication.app.modules.student.data.viewmodel.StudentVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStudent"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStyleindigo_A200">
+        <LinearLayout android:id="@+id/linearColumnuser"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_24pxh"
+            android:layout_marginStart="@dimen/_36pxh"
+            android:layout_marginTop="@dimen/_31pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarToolbar"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" app:contentInsetStart="0dp">
+                <LinearLayout android:id="@+id/linearRowuser"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <ImageView android:id="@+id/imageUser"
+                        android:layout_height="@dimen/_76pxh"
+                        android:layout_width="@dimen/_87pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_user"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_user"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtLanguage"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_21pxv"
+                        android:layout_marginStart="@dimen/_2pxh"
+                        android:layout_marginTop="@dimen/_17pxv"
+                        android:layout_weight="0.71"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{studentVM.studentModel.txtLanguage}"
+                        style="@style/txtFredokasemibold30" tools:text="@string/msg_student_detail"/>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+            <FrameLayout android:id="@+id/frameStacknoofdepartmen"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_80pxv"
+                android:layout_marginEnd="@dimen/_2pxh"
+                android:layout_marginTop="@dimen/_49pxv" android:layout_width="@dimen/_297pxh">
+                <TextView android:ellipsize="end"
+                    android:gravity="top|start"
+                    android:id="@+id/txtNoofDepartmen"
+                    android:layout_gravity="top|start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{studentVM.studentModel.txtNoofDepartmen}"
+                    style="@style/txtKanitmedium23" tools:text="@string/msg_no_of_departmen"/>
+                <View
+                    android:background="@drawable/rectangle_bg_bluegray_100_radius_15"
+                    android:id="@+id/viewRectangleTwentySeven"
+                    android:layout_gravity="bottom|center"
+                    android:layout_height="@dimen/_47pxv"
+                    android:layout_marginStart="@dimen/_1pxh"
+                    android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_296pxh"/>
+            </FrameLayout>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtStudentName"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_19pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{studentVM.studentModel.txtStudentName}"
+                style="@style/txtKanitmedium23" tools:text="@string/lbl_student_name"/>
+            <View
+                android:background="@drawable/rectangle_bg_bluegray_100_radius_15"
+                android:id="@+id/viewRectangleTwentyEight"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_47pxv"
+                android:layout_marginEnd="@dimen/_2pxh"
+                android:layout_marginStart="@dimen/_1pxh"
+                android:layout_marginTop="@dimen/_1pxv" android:layout_width="@dimen/_296pxh"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtTotalNoofStu"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_20pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{studentVM.studentModel.txtTotalNoofStu}"
+                style="@style/txtKanitmedium23" tools:text="@string/msg_total_no_of_stu"/>
+            <View
+                android:background="@drawable/rectangle_bg_bluegray_100_radius_15"
+                android:id="@+id/viewRectangleTwentyNine"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_47pxv"
+                android:layout_marginEnd="@dimen/_2pxh"
+                android:layout_marginStart="@dimen/_1pxh"
+                android:layout_marginTop="@dimen/_1pxv" android:layout_width="@dimen/_296pxh"/>
+            <LinearLayout android:gravity="center_horizontal"
+                android:id="@+id/linearColumngroupthirtyone"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_44pxh"
+                android:layout_marginStart="@dimen/_44pxh"
+                android:layout_marginTop="@dimen/_290pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylecornerRadius">
+                <TextView android:ellipsize="end"
+                    android:gravity="start"
+                    android:id="@+id/txtGroupThirtyOne"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_1pxv"
+                    android:paddingStart="@dimen/_19pxh"
+                    android:paddingTop="@dimen/_1pxv"
+                    android:singleLine="true"
+                    android:text="@{studentVM.studentModel.txtGroupThirtyOne}"
+                    style="@style/txtSolidRounded" tools:text="@string/lbl_save_continue"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</layout>
