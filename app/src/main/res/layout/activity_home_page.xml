@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="homePageVM" type="com.ajarajeswarirsapplication.app.modules.homepage.data.viewmodel.HomePageVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameHomepage"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStyleindigo_A200">
+        <LinearLayout android:id="@+id/linearColumngrid"
+            android:layout_gravity="top|center"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_28pxh"
+            android:layout_marginStart="@dimen/_28pxh"
+            android:layout_marginTop="@dimen/_72pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarToolbar"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="match_parent" app:contentInsetStart="0dp">
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearRowgrid"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <ImageButton
+                        android:background="@drawable/rectangle_bg_indigo_100_c9_radius_19"
+                        android:id="@+id/btnGrid"
+                        android:layout_height="@dimen/_38pxh"
+                        android:layout_width="@dimen/_38pxh"
+                        android:paddingHorizontal="@dimen/_9pxh"
+                        android:paddingVertical="@dimen/_9pxv"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/img_grid" tools:ignore="ContentDescription"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtYourSchedules"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_1pxv"
+                        android:layout_marginStart="@dimen/_41pxh"
+                        android:layout_marginTop="@dimen/_2pxv"
+                        android:layout_weight="0.82"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{homePageVM.homePageModel.txtYourSchedules}"
+                        style="@style/txtSecularOneregular24" tools:text="@string/lbl_your_schedules"/>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+            <FrameLayout android:id="@+id/frameStackgroupten"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_72pxv"
+                android:layout_marginStart="@dimen/_2pxh"
+                android:layout_marginTop="@dimen/_70pxv" android:layout_width="@dimen/_298pxh">
+                <ImageView android:id="@+id/imageGroupTen"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_72pxh"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_group10"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_group10"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtNewSchedule"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_22pxv"
+                    android:layout_marginEnd="@dimen/_60pxh"
+                    android:layout_marginStart="@dimen/_60pxh"
+                    android:layout_marginTop="@dimen/_22pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{homePageVM.homePageModel.txtNewSchedule}"
+                    style="@style/txtFredokaregular20" tools:text="@string/lbl_new_schedule"/>
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="finalPageRowModel" type="com.ajarajeswarirsapplication.app.modules.finalpage.data.model.FinalPageRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowrectanglethirtyone"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <View
+            android:background="@drawable/rectangle_bg_purple_100_radius_10"
+            android:id="@+id/viewRectangleThirtyOne"
+            android:layout_height="@dimen/_84pxh" android:layout_width="@dimen/_86pxh"/>
+        <View
+            android:background="@drawable/rectangle_bg_lime_200_radius_10"
+            android:id="@+id/viewRectangleThirtyTwo"
+            android:layout_height="@dimen/_84pxh"
+            android:layout_marginStart="@dimen/_25pxh" android:layout_width="@dimen/_86pxh"/>
+        <View
+            android:background="@drawable/rectangle_bg_white_a700_radius_10"
+            android:id="@+id/viewRectangleThirtyThree"
+            android:layout_height="@dimen/_84pxh"
+            android:layout_marginStart="@dimen/_25pxh" android:layout_width="@dimen/_86pxh"/>
+        <ImageView android:id="@+id/imageRectangleFortySix"
+            android:layout_height="@dimen/_84pxh"
+            android:layout_marginStart="@dimen/_25pxh"
+            android:layout_width="@dimen/_86pxh"
+            android:scaleType="fitXY" cornerRadius="@{@dimen/_10pxh}"
+            imageRes="@{@drawable/img_rectangle46}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle46"/>
+        <ImageView android:id="@+id/imageRectangleFortySeven"
+            android:layout_height="@dimen/_84pxh"
+            android:layout_marginStart="@dimen/_25pxh"
+            android:layout_width="@dimen/_86pxh"
+            android:scaleType="fitXY" cornerRadius="@{@dimen/_10pxh}"
+            imageRes="@{@drawable/img_rectangle47}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle47"/>
+        <ImageView android:id="@+id/imageRectangleFortyEight"
+            android:layout_height="@dimen/_84pxh"
+            android:layout_marginStart="@dimen/_25pxh"
+            android:layout_width="@dimen/_86pxh"
+            android:scaleType="fitXY" cornerRadius="@{@dimen/_10pxh}"
+            imageRes="@{@drawable/img_rectangle48}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle48"/>
+    </LinearLayout>
+</layout>

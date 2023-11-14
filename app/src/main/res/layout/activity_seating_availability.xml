@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="seatingAvailabilityVM" type="com.ajarajeswarirsapplication.app.modules.seatingavailability.data.viewmodel.SeatingAvailabilityVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearSeatingAvailab"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyleindigo_A200">
+        <androidx.appcompat.widget.Toolbar
+            android:gravity="center_horizontal"
+            android:id="@+id/toolbarToolbar"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_26pxh"
+            android:layout_marginStart="@dimen/_26pxh"
+            android:layout_marginTop="@dimen/_35pxv"
+            android:layout_width="match_parent" app:contentInsetStart="0dp">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowmusic"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <ImageView android:id="@+id/imageMusic"
+                    android:layout_height="@dimen/_78pxh"
+                    android:layout_width="@dimen/_73pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_music"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_music"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtLanguage"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_35pxv"
+                    android:layout_marginStart="@dimen/_17pxh"
+                    android:layout_marginTop="@dimen/_9pxv"
+                    android:layout_weight="0.74"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{seatingAvailabilityVM.seatingAvailabilityModel.txtLanguage}"
+                    style="@style/txtFredokasemibold27" tools:text="@string/msg_room_availabili"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <TextView android:ellipsize="end" android:gravity="start"
+            android:id="@+id/txtTotalNoofRoo"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_32pxh"
+            android:layout_marginStart="@dimen/_32pxh"
+            android:layout_marginTop="@dimen/_46pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{seatingAvailabilityVM.seatingAvailabilityModel.txtTotalNoofRoo}"
+            style="@style/txtKanitmedium23" tools:text="@string/msg_total_no_of_roo"/>
+        <View
+            android:background="@drawable/rectangle_bg_bluegray_100_radius_15"
+            android:id="@+id/viewRectangleThirty"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_47pxv"
+            android:layout_marginEnd="@dimen/_26pxh"
+            android:layout_marginStart="@dimen/_26pxh"
+            android:layout_marginTop="@dimen/_1pxv" android:layout_width="@dimen/_296pxh"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtRoomName"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_32pxh"
+            android:layout_marginStart="@dimen/_32pxh"
+            android:layout_marginTop="@dimen/_20pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{seatingAvailabilityVM.seatingAvailabilityModel.txtRoomName}"
+            style="@style/txtKanitmedium23" tools:text="@string/lbl_room_name"/>
+        <View
+            android:background="@drawable/rectangle_bg_bluegray_100_radius_15"
+            android:id="@+id/viewRectangleThirtyOne"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_47pxv"
+            android:layout_marginEnd="@dimen/_26pxh"
+            android:layout_marginStart="@dimen/_26pxh"
+            android:layout_marginTop="@dimen/_1pxv" android:layout_width="@dimen/_296pxh"/>
+        <FrameLayout android:id="@+id/frameStackseatingavailab"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_80pxv"
+            android:layout_marginEnd="@dimen/_26pxh"
+            android:layout_marginStart="@dimen/_26pxh"
+            android:layout_marginTop="@dimen/_22pxv" android:layout_width="@dimen/_297pxh">
+            <TextView android:ellipsize="end"
+                android:gravity="top|start"
+                android:id="@+id/txtSeatingAvailab"
+                android:layout_gravity="top|start"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{seatingAvailabilityVM.seatingAvailabilityModel.txtSeatingAvailab}"
+                style="@style/txtKanitmedium23" tools:text="@string/msg_seating_availab"/>
+            <View
+                android:background="@drawable/rectangle_bg_bluegray_100_radius_15"
+                android:id="@+id/viewRectangleThirtyTwo"
+                android:layout_gravity="bottom|center"
+                android:layout_height="@dimen/_47pxv"
+                android:layout_marginStart="@dimen/_1pxh"
+                android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_296pxh"/>
+        </FrameLayout>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumngroupthirtyone"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_26pxh"
+            android:layout_marginStart="@dimen/_26pxh"
+            android:layout_marginTop="@dimen/_283pxv"
+            android:layout_width="wrap_content"
+            android:orientation="vertical" style="@style/groupStylecornerRadius">
+            <TextView android:ellipsize="end" android:gravity="start"
+                android:id="@+id/txtGroupThirtyOne"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_1pxv"
+                android:paddingStart="@dimen/_19pxh"
+                android:paddingTop="@dimen/_1pxv"
+                android:singleLine="true"
+                android:text="@{seatingAvailabilityVM.seatingAvailabilityModel.txtGroupThirtyOne}"
+                style="@style/txtSolidRounded" tools:text="@string/lbl_save_continue"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

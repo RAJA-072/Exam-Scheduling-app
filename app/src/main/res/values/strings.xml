@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">ajarajeswari_r_s_application37</string>
+    <string name="loading">Loading…</string>
+    <string name="no_internet_connection">No internet connection!</string>
+<string name="msg_student_detail">  Student  Details</string>
+<string name="lbl_email">Email</string>
+<string name="lbl_faculty_details">Faculty Details</string>
+<string name="lbl_room_name">Room Name</string>
+<string name="msg_seating_availab">Seating Availability</string>
+<string name="lbl_new_schedule">New Schedule</string>
+<string name="msg_confirm_passwor">Confirm Password</string>
+<string name="lbl_department_name">Department Name</string>
+<string name="msg_do_not_have_an">
+ Do not have an account? </string>
+<string name="msg_already_have_an">
+Already have an account? </string>
+<string name="msg_room_availabili">     Room Availability</string>
+<string name="msg_total_no_of_roo">Total No of Rooms</string>
+<string name="msg_let_s_make_our">Let\u2019s make our seat!!!</string>
+<string name="lbl_enter_username">Enter Username</string>
+<string name="lbl_seats">SEATS</string>
+<string name="msg_total_no_of_fac">Total No of Faculty</string>
+<string name="lbl_final_output">FINAL OUTPUT</string>
+<string name="lbl_enter_password2">Enter password</string>
+<string name="msg_already_have_an2">Already have an account?</string>
+<string name="lbl_password2"> Password</string>
+<string name="lbl_log_in">Log In</string>
+<string name="lbl_enter_email">Enter email</string>
+<string name="lbl_welcome">WELCOME !!</string>
+<string name="lbl_username2">Username</string>
+<string name="lbl_sign_in">Sign In</string>
+<string name="lbl_save_continue">SAVE &amp; CONTINUE</string>
+<string name="lbl_login2">LOGIN</string>
+<string name="lbl_faculty">FACULTY</string>
+<string name="lbl_sign_up">SIGN UP</string>
+<string name="msg_total_no_of_stu">Total No of Student</string>
+<string name="lbl_password">Password</string>
+<string name="lbl_sign_up2">Sign Up</string>
+<string name="msg_getting_your_se">Getting Your Seats Automated?</string>
+<string name="msg_no_of_departmen">No of Departments</string>
+<string name="lbl_student_name">Student Name</string>
+<string name="msg_create_your_new">Create your new Account</string>
+<string name="msg_do_not_have_an2"> Do not have an account?</string>
+<string name="lbl_username">UserName</string>
+<string name="lbl_student">STUDENT</string>
+<string name="lbl_your_schedules">Your Schedules</string>
+<string name="lbl_enter_password">Enter Password</string>
+<string name="msg_please_enter_valid_pa">Please enter valid password</string>
+<string name="msg_please_enter_valid_email">Please enter valid email</string>
+<string name="msg_please_enter_valid_text">Please enter valid text</string>
+<string name="msg_invalid_username_and_pa">INVALID Username and Password</string>
+<string name="lbl_error">ERROR</string>
+</resources>

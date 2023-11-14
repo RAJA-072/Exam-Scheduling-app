@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="welcomePageVM" type="com.ajarajeswarirsapplication.app.modules.welcomepage.data.viewmodel.WelcomePageVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearWelcomePage"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyleindigo_A200">
+        <ImageView android:id="@+id/imageUndrawteamup"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_272pxh"
+            android:layout_marginEnd="@dimen/_46pxh"
+            android:layout_marginStart="@dimen/_47pxh"
+            android:layout_marginTop="@dimen/_86pxv"
+            android:layout_width="@dimen/_267pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_undrawteamup"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_undrawteamup"/>
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtWELCOME"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_47pxh"
+            android:layout_marginStart="@dimen/_47pxh"
+            android:layout_marginTop="@dimen/_22pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{welcomePageVM.welcomePageModel.txtWELCOME}"
+            style="@style/txtFredokasemibold40" tools:text="@string/lbl_welcome"/>
+        <TextView android:ellipsize="end" android:gravity="end"
+            android:id="@+id/txtGettingYourSe"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_29pxh"
+            android:layout_marginStart="@dimen/_29pxh"
+            android:layout_marginTop="@dimen/_12pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{welcomePageVM.welcomePageModel.txtGettingYourSe}"
+            style="@style/txtArchivoromanregular20" tools:text="@string/msg_getting_your_se"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnSignUp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_43pxv"
+            android:layout_marginEnd="@dimen/_29pxh"
+            android:layout_marginStart="@dimen/_29pxh"
+            android:layout_marginTop="@dimen/_67pxv"
+            android:layout_width="@dimen/_150pxh"
+            android:paddingBottom="@dimen/_6pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_6pxv" android:singleLine="true"
+            android:text="@string/lbl_sign_up"
+            android:textAllCaps="false" style="@style/btnSolidRounded" tools:text="@string/lbl_sign_up"/>
+        <LinearLayout android:gravity="center_vertical"
+            android:id="@+id/linearRowconfirmation"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_193pxv"
+            android:layout_marginEnd="@dimen/_29pxh"
+            android:layout_marginStart="@dimen/_29pxh"
+            android:layout_marginTop="@dimen/_8pxv"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <TextView android:id="@+id/txtConfirmation"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_2pxv"
+                android:layout_marginTop="@dimen/_2pxv"
+                android:layout_weight="0.8" android:layout_width="0dp"
+                android:text="@{welcomePageVM.welcomePageModel.txtConfirmation}"
+                style="@style/txtKanitregular12" tools:text="@string/msg_already_have_an"/>
+            <TextView android:ellipsize="end" android:id="@+id/txtLogIn"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_3pxh"
+                android:layout_weight="0.2" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{welcomePageVM.welcomePageModel.txtLogIn}"
+                style="@style/txtKanitregular15" textUnderline="true" tools:text="@string/lbl_log_in"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

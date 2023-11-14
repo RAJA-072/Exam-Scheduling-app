@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="seatingVM" type="com.ajarajeswarirsapplication.app.modules.seating.data.viewmodel.SeatingVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameSeating"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStyleindigo_A201">
+        <LinearLayout android:id="@+id/linearColumnletsmakeour"
+            android:layout_gravity="top|center"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_37pxv"
+            android:layout_marginEnd="@dimen/_29pxh"
+            android:layout_marginStart="@dimen/_29pxh"
+            android:layout_marginTop="@dimen/_37pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <TextView android:gravity="center_horizontal"
+                android:id="@+id/txtLetsmakeour"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_28pxh"
+                android:layout_marginStart="@dimen/_40pxh"
+                android:layout_width="match_parent"
+                android:text="@{seatingVM.seatingModel.txtLetsmakeour}"
+                style="@style/txtFredokasemibold50" tools:text="@string/msg_let_s_make_our"/>
+            <LinearLayout android:id="@+id/linearRowundrawteacher"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4pxh"
+                android:layout_marginTop="@dimen/_59pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <FrameLayout android:id="@+id/frameStackundrawteacher"
+                    android:layout_height="@dimen/_111pxv"
+                    android:layout_width="@dimen/_111pxh" style="@style/groupStylewhite_A700cornerRadius">
+                    <ImageView android:id="@+id/imageUndrawteacher"
+                        android:layout_gravity="bottom|end"
+                        android:layout_height="@dimen/_104pxh"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="@dimen/_104pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_undrawteamup"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_undrawteamup"/>
+                </FrameLayout>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnFaculty"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_31pxv"
+                    android:layout_marginStart="@dimen/_31pxh"
+                    android:layout_marginTop="@dimen/_29pxv"
+                    android:layout_weight="0.58"
+                    android:layout_width="0dp"
+                    android:paddingBottom="@dimen/_10pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_10pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_faculty"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRounded_2" tools:text="@string/lbl_faculty"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearRowundrawmention"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_35pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <FrameLayout android:id="@+id/frameStackundrawmention"
+                    android:layout_height="@dimen/_116pxv"
+                    android:layout_width="@dimen/_115pxh" style="@style/groupStylewhite_A700cornerRadius">
+                    <ImageView android:id="@+id/imageUndrawmention"
+                        android:layout_gravity="center"
+                        android:layout_height="@dimen/_91pxh"
+                        android:layout_marginBottom="@dimen/_12pxv"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginStart="@dimen/_14pxh"
+                        android:layout_marginTop="@dimen/_12pxv"
+                        android:layout_width="@dimen/_90pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_undrawteamup"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_undrawteamup"/>
+                </FrameLayout>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnStudent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_30pxv"
+                    android:layout_marginStart="@dimen/_31pxh"
+                    android:layout_marginTop="@dimen/_35pxv"
+                    android:layout_weight="0.57"
+                    android:layout_width="0dp"
+                    android:paddingBottom="@dimen/_10pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_10pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_student"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRounded_2" tools:text="@string/lbl_student"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearRowgroup"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_1pxh"
+                android:layout_marginTop="@dimen/_36pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <FrameLayout android:id="@+id/frameStackgroup"
+                    android:layout_height="@dimen/_116pxv"
+                    android:layout_width="@dimen/_115pxh" style="@style/groupStylewhite_A700cornerRadius">
+                    <ImageView android:id="@+id/imageGroup"
+                        android:layout_gravity="top|center"
+                        android:layout_height="@dimen/_90pxh"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_14pxh"
+                        android:layout_marginStart="@dimen/_14pxh"
+                        android:layout_marginTop="@dimen/_9pxv"
+                        android:layout_width="@dimen/_85pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_group"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_group"/>
+                </FrameLayout>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnSeats"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_33pxv"
+                    android:layout_marginStart="@dimen/_30pxh"
+                    android:layout_marginTop="@dimen/_32pxv"
+                    android:layout_weight="0.57"
+                    android:layout_width="0dp"
+                    android:paddingBottom="@dimen/_10pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_10pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_seats"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRounded_2" tools:text="@string/lbl_seats"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</layout>
